@@ -16,7 +16,7 @@ from fit.utils.utils import normalize
 
 import wget
 import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
+ssl._create_default_https_context = ssl.create_default_context
 
 
 class TomoFITDataModule(LightningDataModule):
